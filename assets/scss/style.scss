@@ -1,0 +1,1034 @@
+//Import of Font-Family {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,300;1,400&display=swap');
+//}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//Making of Variables {
+
+//}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//Import of Null-Style {
+@import "nullstyle.scss";
+//}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//The Basic CSS for Start {
+body {
+	font-family: 'Roboto';
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
+.container{
+	max-width: 1200px;
+	padding: 0px 5px;
+	margin: 0px auto;
+}
+//}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//STARTING CODING {}!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+.main-screen {
+	background:  url('../images/main_image.jpg') center no-repeat;
+	background-size: cover;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+.main {
+	margin-top: 230px;
+	text-align: center;
+	&__label {
+		color: #ffffff;
+		font-family: "Kaushan Script";
+		font-size: 72px;
+		font-weight: 400;
+	}
+	&__title {
+		margin: 42px 0 124px 0;
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 150px;
+		font-weight: 700;
+		line-height: 140px;
+		text-transform: uppercase;
+		&:after {
+			content: '';
+			display: block;
+			position: relative;
+			width: 60px;
+			height: 3px;
+			background-color: #fff;
+			margin: 0px auto;
+			bottom: -50px;
+		}
+	}
+	&__btn {
+		a {
+			border: 1px solid #fff;
+			padding: 15px 33px ;
+			color: #ffffff;
+			font-family: Montserrat;
+			font-weight: 700;
+			text-transform: uppercase;
+			&:hover {
+				color: #fce38a;
+			}
+		}
+	}
+	&__body {
+		margin: 199px 0 10px 0;
+		display: flex;
+		justify-content: space-between;
+		color: #ffffff;
+		font-family: Montserrat;
+	}
+	&__row {
+		flex: 0 1 25%;
+		margin: 0 15px;
+		span {
+			font-size: 24px;
+			font-weight: 700;
+		}
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #fff;
+			top: -25px;
+		}
+	}
+	@media (max-width: 850px) {
+		margin-top: 100px;
+		&__body {
+			margin: 107px 0 10px 0;
+		}
+		&__title {
+			font-size: 80px;
+			line-height: 80px;
+		}
+		&__label {
+			font-size: 45px;
+		}
+	}
+	@media (max-width: 500px) {
+		margin-top: 60px;
+		&__body {
+			margin: 67px 0 10px 0;
+		}
+		&__title {
+			font-size: 50px;
+			line-height: 50px;
+		}
+		&__label {
+			font-size: 30px;
+		}
+		&__btn {
+			a {
+				border: 1px solid #fff;
+				padding: 10px 23px ;
+				color: #ffffff;
+				font-family: Montserrat;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: 12px;
+				&:hover {
+					color: #fce38a;
+				}
+			}
+		}
+		&__row {
+			flex: 0 1 25%;
+			margin: 0 15px;
+			span {
+				font-size: 14px;
+				font-weight: 700;
+			}
+			font-size: 10px;
+			font-weight: 400;
+			text-transform: uppercase;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 3px;
+				background-color: #fff;
+				top: -15px;
+			}
+		}
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////
+.about {
+	&__row {}
+	&__label {
+		margin: 91px 0px 21px 0px;
+		text-align: center;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__text {
+		margin: 90px 0 101px 0;
+		text-align: center;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 110px;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+		margin: 0 5px;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+.title {
+	color: #333333;
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	&:after {
+			content: '';
+			display: block;
+			position: relative;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+			margin: 0px auto;
+			bottom: -40px;
+		}
+
+}
+.label {
+	color: #333333;
+	font-family: "Kaushan Script";
+	font-size: 24px;
+	font-weight: 400;
+}
+.text {
+	color: #999999;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 0px 20px;
+}
+////////////////////////////////////////////////////////////////////////////////
+.blue {
+	background-color: #95e1d3;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		flex: 0 1 20%;
+		margin: 0 5px;
+	}
+	&__body {
+		margin: 90px 0px;
+	}
+	&__num {
+		text-align: center;
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 72px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	&__text {
+		text-align: center;
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	@media (max-width: 650px) {
+		&__num {
+			font-size: 45px;
+		}
+	}
+	@media (max-width: 500px) {
+		&__num {
+			text-align: center;
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: 32px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		&__text {
+			text-align: center;
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: 10px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+.service {
+	&__row {}
+	&__label {
+		text-align: center;
+		margin: 109px 0 22px 0;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__body {
+		margin: 115px 0px 0px 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__block {
+		flex: 0 1 33.333%;
+		margin: 0px 5px;
+	}
+	&__item {
+		display: flex;
+		margin-bottom: 100px;
+	}
+	@media (max-width: 700px) {
+		&__body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__block {
+			max-width: 350px;
+		}
+	}
+}
+.item {
+	&__icon {
+		margin-right: 27px;
+	}
+	&__body {}
+	&__title {
+		color: #333333;
+		font-family: Montserrat;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	&__text {}
+}
+////////////////////////////////////////////////////////////////////////////////
+.design {
+	background: url('../images/design__bg.png') center / cover no-repeat;
+	&__row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__label {
+		margin: 109px 0px 22px 0px;
+	}
+	&__title {}
+	&__image {
+		margin-top: 86px;
+	}
+	&__base {
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	@media (max-width: 500px) {
+		&__image {
+			margin-top: 66px;
+			flex: 0 1 100%;
+			padding: 0px 15px;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+.do {
+	&__row {}
+	&__label {
+		text-align: center;
+		margin: 112px 0px 23px 0;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__text {
+		text-align: center;
+		margin: 91px 0;
+	}
+	&__body {
+		display: flex;
+		margin-bottom: 120px;
+	}
+	&__image {
+		flex: 0 1 50%;
+		margin-right: 5px;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__menu {
+		flex: 0 1 50%;
+		margin-left: 5px;
+		border: 1px solid #e5e5e5;
+	}
+	@media (max-width: 800px) {
+		&__body {
+			display: block;
+		}
+		&__image {text-align: center;margin: 0px 10px 30px 10px;}
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+		align-items: center;
+		position: relative;
+		border: 1px solid #e5e5e5;
+	}
+	&__link {
+		color: #333333;
+		font-family: Montserrat;
+		text-transform: uppercase;
+	}
+	&__icon {
+		margin: 15px;
+	}
+	&__arrow {
+		position: absolute;
+		right: 20px;
+	}
+}
+body.mouse .menu__list>li:hover .sub-menu__list {
+	display: block;
+}
+body.touch .sub-menu__list.open{
+	display: block;
+}
+.sub-menu__list {
+	display: none;
+	position: absolute;
+	padding: 45px 55px 20px 20px;
+	p {
+		color: #999999;
+		font-family: "Roboto";
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 24px;
+	}
+}
+.sub-menu__list{
+		position: relative;
+		left: 0;
+		top: 0;
+}
+///////////////////////////////////////////////////////////////////////////////
+.slider {
+	min-width: 0;
+	background-color: #f8f8f8;
+	padding: 70px 0px;
+	&__main {
+		min-width: 0;
+	}
+	&__item {}
+	&__body {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		padding: 45px;
+		border: 3px solid #95e1d3;
+		margin-right: 60px;
+	}
+	&__row {
+
+	}
+	&__text {
+		color: #999999;
+		font-family: "Roboto";
+		font-size: 24px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 36px;
+	}
+	&__name {
+		margin-top: 23px;
+		color: #333333;
+		font-family: "Kaushan Script";
+		font-size: 24px;
+		font-weight: 400;
+		position: relative;
+		padding: 0 0 0 70px;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+			top: 50%;
+			left: 0;
+		}
+	}
+	@media (max-width: 650px) {
+		&__body {
+			display: block;
+		}
+		&__text {
+			color: #999999;
+			font-family: "Roboto";
+			font-size: 17px;
+			font-weight: 300;
+			font-style: italic;
+			line-height: 26px;
+		}
+		&__icon {
+			display: block;
+			padding: 10px;
+			border: 3px solid #95e1d3;
+			text-align: center;
+		}
+	}
+}
+/* Слайдер */
+.slick-slider{position: relative;padding: 0px 75px;}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 30px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	left: 20px;
+	background: url('../images/arrow_previous.png') 0 0  no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	right: 20px;
+	background: url('../images/arrow_next.png') 0 0  no-repeat;
+}
+////////////////////////////////////////////////////////////////////////////////
+.meet {
+	&__row {}
+	&__label {
+		text-align: center;
+		margin: 99px 0px 23px 0px;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__text {
+		margin: 92px 0px;
+		text-align: center;
+	}
+	&__body {
+		display: flex;
+		margin-bottom: 115px;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+		margin: 0px 5px;
+	}
+	&__image {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__name {
+		text-align: center;
+		margin: 31px 0px 15px 0px;
+		color: #333333;
+		font-family: Montserrat;
+		text-transform: uppercase;
+	}
+	&__job {
+		text-align: center;
+		color: #999999;
+		font-family: "Roboto";
+		font-size: 15px;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 24px;
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+.logo {
+	background-color: #f8f8f8;
+	padding: 50px 0px;
+	&__row {
+		display: flex;
+	}
+	&__image {
+		text-align: center;
+		flex: 0 1 100%;
+		img {
+			max-width: 100%;
+		}
+
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////
+.work {
+	&__row {}
+	&__label {text-align: center;margin: 110px 0px 23px 0px;}
+	&__title {text-align: center;}
+	&__text {text-align: center;margin: 91px 0px 102px 0px;}
+	&__body {
+		display: flex;
+	}
+	&__column {
+		flex: 1 1 25%;
+		img {
+			max-width: 100%;
+		}
+	}
+	.container1 {
+		max-width: 1920px;
+		margin: 0px auto;
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+.comment {
+	padding: 100px 0px;
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+	&__image {
+		margin-right: 60px;
+	}
+	&__body {}
+	&__text {
+		color: #999999;
+		font-family: "Roboto";
+		font-size: 24px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 36px;
+	}
+	&__name {
+		margin-top: 23px;
+		color: #333333;
+		font-family: "Kaushan Script";
+		font-size: 24px;
+		font-weight: 400;
+		position: relative;
+		padding: 0 0 0 70px;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+			top: 50%;
+			left: 0;
+		}
+	}
+	@media (max-width: 570px) {
+		&__text {
+			color: #999999;
+			font-family: "Roboto";
+			font-size: 17px;
+			font-weight: 300;
+			font-style: italic;
+			line-height: 26px;
+		}
+		&__image {
+			margin-right: 10px;
+			img {
+				max-width: 100px;
+			}
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////
+.what {
+	background: url('../images/what__bg.jpg') center / cover no-repeat;
+	&__base {background-color: rgba(255, 255, 255, 0.7);padding: 110px 0px 29px 0px;}
+	&__row {}
+	&__label {text-align: center;}
+	&__title {text-align: center;margin: 16px 0px 132px 0px;}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		flex: 0 1 50%;
+		margin: 0px 5px;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 81px;
+	}
+	&__image {
+		margin-right: 30px;
+	}
+	&__block {}
+	&__name {
+		color: #333333;
+		font-family: Montserrat;
+		text-transform: uppercase;
+	}
+	&__job {
+		color: #333333;
+		font-family: "Roboto";
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 24px;
+		margin: 15px 0px 45px 0px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+			bottom: 0;
+			left: 0;
+			bottom: -17px;
+		}
+	}
+	&__text {
+		color: #999999;
+		font-family: Roboto;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	@media (max-width: 650px) {
+		&__body {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////
+.blog {
+	padding: 110px 0px;
+	&__row {}
+	&__label {text-align: center;}
+	&__title {margin: 22px 0px 92px 0px;text-align: center;}
+	&__body {
+	display: flex;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+		margin: 0px 5px;
+	}
+	&__image {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__name {
+		margin: 20px 0px;
+		color: #333333;
+		font-family: Montserrat;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin-bottom: 41px;
+		color: #999999;
+		font-family: Roboto;
+		font-size: 15px;
+		line-height: 24px;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #e5e5e5;
+			bottom: -20px;
+			left: 0;
+		}
+	}
+	&__icons {
+		display: flex;
+		span {
+			margin-right: 20px;
+		}
+	}
+	&__v {}
+	&__c {}
+	@media (max-width: 650px) {
+		&__body {
+		display: flex;
+		flex-direction: column;
+		max-width: 350px;
+		margin: 0px auto;
+		}
+		&__column {
+			margin-bottom: 20px;
+		}
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////
+//ADAPTIVE FOR PADDING
+@media (max-width: 850px) {
+	.about__label {
+		margin-top: 50px;
+	}
+	.about__text {
+		margin-bottom: 50px;
+	}
+	.about__body {
+		margin-bottom: 50px;
+	}
+	.blue__body {
+		margin: 40px 0px;
+	}
+	.service__label {
+		margin-top: 50px;
+	}
+	.service__item {
+		margin-bottom: 50px;
+	}
+	.design__label {
+		margin-top: 50px;
+	}
+	.do__label {
+		margin-top: 50px;
+	}
+	.do__text {
+		margin-bottom: 50px;
+	}
+	.do__body {
+		margin-bottom: 50px;
+	}
+	.slider {
+		padding: 40px 0px;
+	}
+	.meet__label {
+		margin-top: 50px;
+	}
+	.meet__text {
+		margin-bottom: 50px;
+	}
+	.meet__body {
+		margin-bottom: 50px;
+	}
+	.logo {
+		padding: 30px 0px;
+	}
+	.work__label {
+		margin-top: 50px;
+	}
+	.work__text {
+		margin-bottom: 50px;
+	}
+	.comment {
+		padding: 35px 0px;
+	}
+	.what {
+		&__base {padding: 50px 0px 10px 0px;}
+		&__item {
+		margin-bottom: 40px;
+		}
+	}
+	.blog {
+		padding: 50px;
+	}
+}
+//Footer Code ///////////////////////
+.footer {
+	&__row {
+		border-top: 2px solid #e5e5e5;
+		border-top: 2px solid #e5e5e5;
+		padding: 30px 0px;
+		text-align: center;
+	}
+	&__name {
+		color: #333333;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		span {
+			color: #f38181;
+		}
+	}
+}
+//////////////////////////////////
+
+
+
+
+
+
+
+//HEADER CODE {
+.header {
+	background-color: #e88983;
+	opacity: 0.8;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	height: 60px;
+	align-items: center;
+}
+.header__logo {
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.header__burger {
+	display: none;
+}
+.header__menu {}
+.header__list {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+.header__list li {
+	margin: 0 0 0 20px;
+}
+.header__link {
+	color: #ffffff;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	&:hover {
+		color: #fce38a;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+}
+@media (max-width: 767px) {
+	body.lock {
+		overflow: hidden;
+	}
+	.header__body {
+		height: 50px;
+		justify-content: space-between;
+	}
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+		right: 10px;
+		span {
+			position: absolute;
+			background-color: #000;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all 0.3s ease 0s;
+		}
+		&:before,
+		&:after {
+			content: '';
+			background-color: #000;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&:before {
+			top: 0;
+		}
+		&:after {
+			bottom: 0;
+		}
+	}
+
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.header__burger.active:before {
+		transform:rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after {
+		transform:rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 0.3 ease 0s;
+		background-color: #18b5a4;
+		padding: 70px 10px 20px 10px;
+	}
+	.header__menu.active {
+		top:0;
+	}
+	.header__list {
+		display: block;
+	}
+	.header__list li {
+		margin: 0 0 20px 0;
+	}
+	.header__link {
+		font-size: 30px;
+	}
+	.icon {
+		display: none;
+	}
+}
+//}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//FOOTER CODE {
+
+//}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
